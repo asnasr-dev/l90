@@ -1,0 +1,478 @@
+.page {
+  padding-bottom: 5rem;
+}
+
+.editorial {
+  position: relative;
+  padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 4vw, 2.5rem) 2rem;
+}
+
+.edRail {
+  position: absolute;
+  left: clamp(0.5rem, 3vw, 2rem);
+  top: 2rem;
+  bottom: 2rem;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(
+    180deg,
+    rgba(196, 92, 92, 0.9) 0%,
+    rgba(158, 47, 47, 0.35) 45%,
+    rgba(184, 192, 201, 0.25) 100%
+  );
+  opacity: 0.85;
+}
+
+.edInner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-left: clamp(0.5rem, 2vw, 1.5rem);
+}
+
+.edTop {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap: 2.5rem;
+  align-items: end;
+  margin-bottom: 2.5rem;
+}
+
+.edKicker {
+  margin: 0 0 0.75rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ember-400);
+  font-weight: 600;
+}
+
+.edTitle {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  line-height: 0.95;
+  letter-spacing: 0.03em;
+  color: var(--steel-50);
+}
+
+.edLede {
+  margin: 0;
+  max-width: 40rem;
+  color: var(--steel-300);
+  font-size: 1.02rem;
+}
+
+.edStatBoard {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--shadow-card);
+}
+
+.sbVal {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  letter-spacing: 0.06em;
+  color: var(--steel-50);
+}
+
+.sbLbl {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--steel-500);
+}
+
+.spotlight {
+  display: grid;
+  grid-template-columns: 1.25fr 0.85fr;
+  gap: 0;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-soft);
+  color: inherit;
+  transition: transform 0.25s ease;
+}
+
+.spotlight:hover {
+  transform: translateY(-4px);
+}
+
+.spMedia {
+  position: relative;
+  min-height: 320px;
+}
+
+.spImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.spShade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(10, 11, 13, 0.1) 0%, rgba(10, 11, 13, 0.55) 100%);
+}
+
+.spBadge {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--steel-950);
+  background: var(--chrome);
+}
+
+.spCopy {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  background: linear-gradient(160deg, rgba(26, 29, 34, 0.98), rgba(14, 15, 18, 0.98));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.spEyebrow {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--steel-500);
+}
+
+.spTitle {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  letter-spacing: 0.04em;
+  color: var(--steel-50);
+}
+
+.spTag {
+  margin: 0;
+  color: var(--steel-300);
+  font-size: 0.98rem;
+}
+
+.spMeta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.spPrice {
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: #fff;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(158, 47, 47, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.controls {
+  padding: 0 clamp(1rem, 4vw, 2.5rem) 2rem;
+}
+
+.controlsInner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1rem;
+  align-items: end;
+}
+
+.searchWrap {
+  position: relative;
+}
+
+.search {
+  width: 100%;
+  padding: 1rem 1.15rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--steel-50);
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.search::placeholder {
+  color: var(--steel-500);
+}
+
+.search:focus {
+  border-color: rgba(196, 92, 92, 0.55);
+  box-shadow: 0 0 0 3px rgba(158, 47, 47, 0.2);
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+}
+
+.fieldLbl {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--steel-500);
+}
+
+.select {
+  padding: 0.75rem 0.85rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(14, 15, 18, 0.85);
+  color: var(--steel-100);
+  cursor: pointer;
+}
+
+.gridWrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 4vw, 2.5rem);
+}
+
+.gridHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.gridTitle {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  letter-spacing: 0.06em;
+  color: var(--steel-50);
+}
+
+.gridCount {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--steel-500);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--shadow-card);
+  color: inherit;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(196, 92, 92, 0.35);
+}
+
+.cardTall {
+  grid-column: span 6;
+  grid-row: span 1;
+}
+
+.cardMedia {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+
+.cardTall .cardMedia {
+  aspect-ratio: 16 / 11;
+}
+
+.cardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.card:hover .cardImg {
+  transform: scale(1.05);
+}
+
+.cardShine {
+  position: absolute;
+  inset: -40% -30%;
+  background: linear-gradient(
+    115deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.12) 50%,
+    transparent 60%
+  );
+  transform: translateX(-30%);
+  opacity: 0;
+  transition:
+    opacity 0.3s ease,
+    transform 0.6s ease;
+}
+
+.card:hover .cardShine {
+  opacity: 1;
+  transform: translateX(30%);
+}
+
+.cardBadge {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--steel-950);
+  background: var(--chrome);
+}
+
+.cardBody {
+  padding: 1.1rem 1.15rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+}
+
+.cardCat {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ember-400);
+  font-weight: 600;
+}
+
+.cardName {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  letter-spacing: 0.03em;
+  color: var(--steel-50);
+}
+
+.cardTag {
+  margin: 0 0 0.25rem;
+  font-size: 0.88rem;
+  color: var(--steel-400);
+  flex: 1;
+}
+
+.cardRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.cardPrice {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #fff;
+}
+
+.cardStars {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.cardRevCount {
+  font-size: 0.78rem;
+  color: var(--steel-500);
+}
+
+.empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--steel-400);
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    grid-column: span 6;
+  }
+
+  .cardTall {
+    grid-column: span 12;
+  }
+}
+
+@media (max-width: 720px) {
+  .edTop {
+    grid-template-columns: 1fr;
+  }
+
+  .edStatBoard {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .spotlight {
+    grid-template-columns: 1fr;
+  }
+
+  .controlsInner {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fieldLbl:nth-of-type(3) {
+    grid-column: 1;
+  }
+
+  .card {
+    grid-column: span 12;
+  }
+}

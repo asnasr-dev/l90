@@ -1,0 +1,69 @@
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2.25rem clamp(1rem, 4vw, 2.5rem) 4rem;
+}
+
+.head {
+  margin-bottom: 1.75rem;
+}
+
+.kicker {
+  margin: 0 0 0.75rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ember-400);
+  font-weight: 600;
+}
+
+.title {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  line-height: 0.95;
+  letter-spacing: 0.03em;
+  color: var(--steel-50);
+}
+
+.lede {
+  margin: 0;
+  color: var(--steel-300);
+  font-size: 1.02rem;
+  max-width: 46rem;
+}
+
+.card {
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: var(--shadow-card);
+  padding: 1.25rem 1.35rem 1.35rem;
+  margin: 0 0 1rem;
+}
+
+.card h2 {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  letter-spacing: 0.05em;
+  color: var(--steel-50);
+  font-size: 1.55rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--steel-300);
+  line-height: 1.8;
+}
+
+.card a {
+  color: var(--steel-100);
+  text-decoration: underline;
+  text-decoration-color: rgba(196, 92, 92, 0.55);
+  text-underline-offset: 3px;
+}
+
+.card a:hover {
+  text-decoration-color: rgba(196, 92, 92, 0.9);
+}
+
